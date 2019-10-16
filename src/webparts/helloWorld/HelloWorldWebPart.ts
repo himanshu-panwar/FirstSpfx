@@ -38,22 +38,261 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
 
   public render(): void {
     this.domElement.innerHTML = `
-    <div class="${ styles.helloWorld }">
-      <div class="${ styles.container }">
+    <div class="${ styles.main }">
         <div class="${ styles.row }">
-          <div class="${ styles.column }">
-            <span class="${ styles.title }">Welcome to SharePoint!</span>
-            <p class="${ styles.subTitle }">Customize SharePoint experiences using web parts.</p>
-            <p class="${ styles.description }">${escape(this.properties.description)}</p>
-            <p class="${ styles.description }">Loading from ${escape(this.context.pageContext.web.title)}</p>
-            <a href="https://aka.ms/spfx" class="${ styles.button }">
-              <span class="${ styles.label }">Learn more</span>
-            </a>
-          </div>
+            <div class="${ styles.column} }">
+                <div class="${ styles.headercontent }" onclick="window.open('http://google.com', '_blank');">
+                    <p>Business process</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.headercontent}">
+                    <p class="${ styles.doubleline}">Architecture & Applications</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.headercontent}">
+                    <p>Project</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.headercontent}">
+                    <p>Release</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.headercontent}">
+                    <p>Change Governance</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.headercontent}">
+                    <p>Monitor</p>
+                </div>
+            </div>
         </div>
-        <div id="spListContainer" />
-      </div>
-    </div>`;
+
+
+        <div class="${ styles.row}">
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p class="${ styles.doubleline}">Record To Report (R2R)</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p class="${ styles.doubleline}">Architecture & System Landscape</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p class="${ styles.doubleline}">Project Portfolio Overview</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p class="${ styles.doubleline}">Release Management process</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p class="${ styles.doubleline}">Change Control Process - CAB</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p class="${ styles.doubleline}">SAP Technical Monitoring</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="${ styles.row}">
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p>Procure To Pay (P2P)</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p>Application Catalog</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p class="${ styles.doubleline}">Project Management Framework</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p>Release Schedule</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}" style="padding-top:5px;padding-bottom:5px;">
+                    <p class="${styles.tripleline}">Production Verification & Validation</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p class="${ styles.doubleline}">SAP Business Process Monitoring</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="${ styles.row}">
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p class="${ styles.doubleline}">Schedule To Deliver (S2D)</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p>Interface Catalog</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p class="${ styles.doubleline}">Transition To Operations</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p>Testing Standards</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content} ${ styles.empty}">
+                    <p></p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p>Control M</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="${ styles.row}">
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p class="${ styles.doubleline}">Forecast To Produce (F2P)</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p>Integration Standards</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content} ${ styles.empty}">
+                    <p></p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p>Test Catalog</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="content ${ styles.empty}">
+                    <p></p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p>SloarWind</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="${ styles.row}">
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p>Order To Cash (O2C)</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p>Coding Standards</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="content ${ styles.empty}">
+                    <p></p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p class="${ styles.doubleline}">Solution Manager - CHaRM</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content} ${ styles.empty}">
+                    <p></p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content}">
+                    <p>Network Monitoring</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="${ styles.row}">
+            <div class="${ styles.column}">
+                <div class="${ styles.content}" style="padding-top:5px;padding-bottom:5px;">
+                    <p class="${ styles.tripleline}">Data, Digital, Integration, Marketing, Reporting</p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content} ${ styles.empty}">
+                    <p></p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content} ${ styles.empty}">
+                    <p></p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content} ${ styles.empty}">
+                    <p></p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content} ${ styles.empty}">
+                    <p></p>
+                </div>
+            </div>
+            <div class="${ styles.column}">
+                <div class="${ styles.content} ${ styles.empty}">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+    
+
+    <div class="${ styles.footercontainer}">
+        <div class="${ styles.footeritem}">
+            <img src="C:\Users\himan\Downloads\account_balance-24px.svg" />
+            <span>Security</span>
+        </div>
+        <div class="${ styles.footeritem}">
+                <img src="C:\Users\himan\Downloads\account_balance-24px.svg" />
+                <span>Learning Resources</span>
+        </div>        
+        <div class="${ styles.footeritem}">
+                <img src="C:\Users\himan\Downloads\account_balance-24px.svg" />
+                <span>Provide Feedback</span>
+        </div>        
+        <div class="${ styles.footeritem}">
+                <img src="C:\Users\himan\Downloads\account_balance-24px.svg" />
+                <span>IT Service Desk</span>
+        </div>        
+    </div>
+
+</div>`;
   
     this._renderListAsync();
   }
