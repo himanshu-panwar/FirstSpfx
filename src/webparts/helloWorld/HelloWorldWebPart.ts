@@ -42,7 +42,7 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
         <div class="${ styles.row }">
             <div class="${ styles.column} }">
                 <div class="${ styles.headercontent }" onclick="window.open('http://google.com', '_blank');">
-                    <p>Business process</p>
+                    <p>Business Process</p>
                 </div>
             </div>
             <div class="${ styles.column}">
@@ -62,7 +62,7 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
             </div>
             <div class="${ styles.column}">
                 <div class="${ styles.headercontent}">
-                    <p>Change Governance</p>
+                    <p class="${styles.doubleline}">Change Governance</p>
                 </div>
             </div>
             <div class="${ styles.column}">
@@ -90,8 +90,8 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
                 </div>
             </div>
             <div class="${ styles.column}">
-                <div class="${ styles.content}">
-                    <p class="${ styles.doubleline}">Release Management process</p>
+                <div class="${ styles.content}" style="padding-top:5px;padding-bottom:5px;">
+                    <p class="${ styles.tripleline}">Release Management process</p>
                 </div>
             </div>
             <div class="${ styles.column}">
@@ -118,8 +118,8 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
                 </div>
             </div>
             <div class="${ styles.column}">
-                <div class="${ styles.content}">
-                    <p class="${ styles.doubleline}">Project Management Framework</p>
+                <div class="${ styles.content}" style="padding-top:5px;padding-bottom:5px;">
+                    <p class="${ styles.tripleline}">Project Management Framework</p>
                 </div>
             </div>
             <div class="${ styles.column}">
@@ -180,7 +180,7 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
             </div>
             <div class="${ styles.column}">
                 <div class="${ styles.content}">
-                    <p>Integration Standards</p>
+                    <p class="${styles.doubleline}">Integration Standards</p>
                 </div>
             </div>
             <div class="${ styles.column}">
@@ -240,7 +240,7 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
 
         <div class="${ styles.row}">
             <div class="${ styles.column}">
-                <div class="${ styles.content}" style="padding-top:5px;padding-bottom:5px;">
+                <div class="${ styles.content}" style="padding-top:5px;padding-bottom:5px;padding-left:3px;padding-right:3px;">
                     <p class="${ styles.tripleline}">Data, Digital, Integration, Marketing, Reporting</p>
                 </div>
             </div>

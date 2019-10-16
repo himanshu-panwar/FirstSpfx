@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #f1f1f1;
+  background-color: #D0CECE;
   font-family: Arial;
 }
 
@@ -46,16 +46,20 @@ h1 {
 
 /* Header Content */
 .headercontent {
-  background-color: grey;
+  background-color: #7F7F7F;
   padding: 10px;
   text-align: center;
   cursor: pointer;
-  font-weight: bold;
+  font-weight: bold;  
+}
+
+p{
+  color: #f1f1f1;
 }
 
 /* Content */
 .content {
-  background-color: lightgreen;
+  background-color: #00B053;
   padding: 10px;
   text-align: center;
 }
